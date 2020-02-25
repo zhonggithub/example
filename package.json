@@ -16,10 +16,6 @@
     "supertest": "^4.0.2"
   },
   "scripts": {
-    "start": "cross-env NODE_ENV=production node dist/app.js",
-    "lint": "eslint src/",
-    "prebuild": "npm run lint && rm -rf dist/",
-    "build": "babel --out-dir dist src",
     "test": "cross-env NODE_ENV=test ava ./tests/routes"
   },
   "author": "",
