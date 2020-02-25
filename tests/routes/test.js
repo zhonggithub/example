@@ -5,7 +5,7 @@
  * Created Date: 2020-02-25 19:18:48
  * Author: Zz
  * -----
- * Last Modified: 2020-02-25 19:49:42
+ * Last Modified: 2020-02-25 20:06:00
  * Modified By: Zz
  * -----
  * Description:
@@ -40,4 +40,5 @@ test.serial('POST /app/api/reservationOrders ok', async (t) => {
   const res = await request.post(url).send(body);
   if (res.status >= 400) console.log(res.text);
   t.is(res.status, 201);
+  // TODO: test reservationID, userID
 });
